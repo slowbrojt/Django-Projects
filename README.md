@@ -1,5 +1,5 @@
 # Django-Projects
-Django web app projects created for CS50 or as personal projects. More detailed descriptions are provided in each projects readme, these are very brief overviews.
+Django web app projects created as CS50 final projects or as personal projects. More detailed descriptions are provided in each projects readme, these are very brief overviews.
 
 ### trickipedia
 Trickipedia is a web app designed to serve as an encyclopedia of skiing tricks, with video examples of each trick submitted by users.
