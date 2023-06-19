@@ -14,4 +14,3 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;Overall, this website a useful resource for both skiers and coaches, as well as a fun and competitive experience for skiers making submissions to get featured. Using Django, I was able to make a website that was simple to use, and very easy to administrate from within the site itself. Jinja templates made it so that I could write a site with many pages using a much lower amount of HTML files, and writing CSS with mobile devices in mind allowed me to write a fairly responsive site that looked good both on desktop and on phones.
 
-The admin version of the site can be accessed by navigating to the /login page of the site, and both the username and password is "pietro".
