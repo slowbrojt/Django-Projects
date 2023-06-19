@@ -1,0 +1,49 @@
+{% extends "tricks/layout.html" %}
+{% load static %}
+
+
+{% block body %}
+<div class="boxes">
+<br>
+<h1>beginner</h1>
+<div class="flexbox">
+{% for trick in beginner %}
+<div class="trick">
+	<form action="/trick/{{ trick.id }}">
+	<input class='trickbtn' type="submit" value="{{ trick.name }}">
+	</form>
+</div>
+{% endfor %}
+</div>
+<h1>intermediate</h1>
+<div class="flexbox">
+{% for trick in intermediate %}
+<div class="trick">
+	<form action="/trick/{{ trick.id }}">
+	<input class='trickbtn' type="submit" value="{{ trick.name }}">
+	</form>
+</div>
+{% endfor %}
+</div>
+<h1>advanced</h1>
+<div class="flexbox">
+{% for trick in advanced %}
+<div class="trick">
+	<form action="/trick/{{ trick.id }}">
+	<input class='trickbtn' type="submit" value="{{ trick.name }}">
+	</form>
+</div>
+{% endfor %}
+</div>
+<h1>pro</h1>
+<div class="flexbox">
+{% for trick in pro %}
+<div class="trick">
+	<form action="/trick/{{ trick.id }}">
+	<input class='trickbtn' type="submit" value="{{ trick.name }}">
+	</form>
+</div>
+{% endfor %}
+</div>
+</div>
+{% endblock %}

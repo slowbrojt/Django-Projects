@@ -1,0 +1,328 @@
+.title{
+	font-family: "ITC Galliard STD Ultra";
+	background-clip: text;
+	color:  transparent;
+	background-image: linear-gradient(to bottom, black, darkred);
+	background-size: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+	font-size: 3.75rem;
+
+}
+
+#backbtn {
+	transform: scale(.3);
+	position: absolute;
+	margin-top: -75px;
+	margin-left: -125px;
+}
+
+.titleshadow{
+	font-family: "ITC Galliard STD Ultra";
+	position: static;
+	background-clip: text;
+	color:  transparent;
+	background-image: linear-gradient(to bottom, black, darkred);
+	background-size: 100%;
+	text-shadow: 
+	2px 2px 2px white, 
+	-2px 2px 2px white,
+	2px -2px 2px white,
+	-2px -2px 2px white;
+	font-size: 3.75rem;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+}
+
+h3 {
+	font-family: Impact, sans-serif;
+	color: #ffde00;
+	font-size: 1.5rem;
+	text-align: center;
+	letter-spacing: .03rem;
+}
+
+#top {
+	margin-right: auto;
+	margin-left: auto;
+	width: 31.25em;	
+}
+.top {
+	display: flex;
+	justify-content: center;
+}
+
+.top >* {
+	margin-right: .63em;
+	max-width: 6.25em;
+	max-height: auto;
+}
+
+.portrait {
+	max-width:  6.25em;
+	max-height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+	#top {
+		width: 15em;
+	}
+	.top {
+		flex-wrap: wrap;
+	}
+
+	.top >* {
+		flex-basis: 33%;
+		margin-right: .63em;
+		max-width: 6.25em;
+		max-height: auto;
+	}
+
+	.portrait {
+		max-width:  6.25em;
+		max-height: auto;
+}
+	.title{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin-left: 2.1%;
+	margin-right: auto;
+	width: 25rem;
+	font-size: 2.2rem;
+
+}
+
+.titleshadow{
+	font-size: 2.2rem;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin-left: .2%;
+	margin-right: auto;
+	width: 25rem;
+	text-shadow: 
+	1px 1px 1px white, 
+	-1px 1px 1px white,
+	1px -1px 1px white,
+	-1px -1px 1px white;
+}
+h3 {
+	font-size: 1.3rem;
+}
+#backbtn{
+	transform: scale(.2);
+}
+}
+@media only screen and (max-width: 390px) {
+.title {
+	width: 22rem;
+	font-size: 1.8rem;
+	margin-left: 5%;
+}
+
+.titleshadow{
+	font-size: 1.8rem;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin-left: 3%;
+	margin-right: auto;
+	width: 22rem;
+	text-shadow: 
+	.8px .8px .8px white, 
+	-.8px .8px .8px white,
+	.8px -.8px .8px white,
+	-.8px -.8px .8px white;
+}
+h3 {
+	font-size: 1.2rem;
+}
+}
+
+#trophybox {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	width: 61.5em;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	z-index: 1;
+	position: relative;
+}
+
+#render { 
+
+margin-left: 65px;
+margin-bottom: -75px; 
+transform: scale(1.2);
+}
+
+#character {
+	transform: scale(.9);
+	margin-bottom: -29px;
+	margin-top: -5px;
+}
+
+#name {
+	font-family: "Impact";
+	color: #ffde00;
+	font-size: 4em;
+	transform: skew(10deg, -10deg);
+	letter-spacing: .1.5rem;
+
+}
+#namebox {
+	top:2.2em;
+	right: 4em;
+	position: relative;
+	margin-left: 17%;
+	margin-bottom: 54%;
+	text-align: center;
+	min-width: 25em;
+}
+
+#bio {
+	font-family: 'Impact';
+	position: absolute;
+	color: white;
+	width: 26.8em;
+	text-align: left;
+	margin-left: 42.5%;
+	margin-top: 75px;
+	font-size: 1.125em;
+	letter-spacing: .01rem;
+}
+
+.center {
+	text-align: center;
+}
+
+#mobilename {
+	font-family: "Impact";
+	color: #ffde00;
+	font-size: 4.5em;
+	transform: skew(10deg, -10deg);
+	letter-spacing: .1.5rem;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#mobilebio {
+	font-family: 'Impact';
+	color: white;
+	text-align: left;
+	font-size: .9em;
+	letter-spacing: .01rem;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 700px;
+}
+
+#flexbox1 {
+	display: flex;
+	flex-wrap: wrap;
+	font-family: 'Impact';
+	color: white;
+	text-align: left;
+	font-size: .9em;
+	letter-spacing: .01rem;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 700px;
+}
+
+#flexbox1 >* {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#listtitle {
+	text-align: center;
+}
+
+#mobileplayers {
+	font-family: 'Impact';
+	color: white;
+	text-align: center;
+	font-size: .9em;
+	letter-spacing: .01rem;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+ }
+
+ ul {
+ 	list-style-type: none;
+ }
+
+@media only screen and (max-width: 950px) {
+	#desktopview {
+		display: none;
+	}
+	#mobileview {
+		display: block;
+	}
+	#mobilerender {
+		width: 216px;
+		height: auto;
+		margin: auto
+		}
+	#mobilecharacter {
+		transform: scale(.9);
+		height: 300px;
+		margin-bottom: -23px;
+		margin-top: -3px;
+		margin-left: -3px;
+	}
+}
+@media only screen and (min-width: 950px) {
+	#mobileview {
+		display:  none;
+		}
+}
+		
+#mobiledescription {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+li {
+	margin-right: 5px;
+}
+
+button {
+
+	background-color: transparent;
+	border-color: #ffde00;
+	border-radius: 10px;
+	border-width: thick;
+	height: 55px;
+	width: 70px;
+	color: #f8b800;
+	font-family: 'Impact';
+	font-size: 1.5em;
+	margin-right: 33px;
+	letter-spacing: .05em;
+}
+
+#buttons {
+	display: flex;
+	position: absolute;
+	margin-left: 58%;
+	margin-top: 57%;
+}

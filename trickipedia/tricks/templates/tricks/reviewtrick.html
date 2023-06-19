@@ -1,0 +1,40 @@
+{% extends "tricks/layout.html" %}
+{% load static %}
+
+{% block body %}
+	<div class="center">
+	{{ trick.video|safe }}
+	</div>
+	<form method="POST" action="/review/{{ trick.id }}"> {% csrf_token %}
+		<label for="trick">trick: </label> 
+		<input required name="trick" type="text" value="{{ trick.name }}">
+		<label for="trick">skier: </label>
+		<input required name="skier" type="text" value="{{ trick.skier }}"><br>
+		<label for="filmer">filmer: </label> 
+		<input required name="filmer" type="text" value="{{ trick.filmer }}">
+		<label for="insta">insta: </label>
+		<input name="insta" type="text" value="{{ trick.insta }}"><br>
+		<label for="ns">ns: </label>
+		<input name="ns" type="text" value="{{ trick.ns }}">  
+		<label for="difficulty">difficulty: </label>
+		<select required name= "difficulty" id="difficulty" 
+		name="difficulty">
+  			<option value="beginner">beginner</option>
+  			<option value="intermediate">intermediate</option>
+  			<option value="advanced">advanced</option>
+  			<option value="pro">pro</option>
+		</select> <br>
+		<label for="description">description: </label>
+		<textarea required name="description" >{{ trick.description }}</textarea> <br>
+		<div class="accept">
+			<input id="acceptbtn" type="submit" value="accept?">
+			</form>
+			<form action="/delete/{{ trick.id }}" method="POST"> {% csrf_token %}
+				<input type="submit" value="delete?">
+			</form>
+		</div>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,65 @@
+{% load static %}
+
+<!DOCTYPE html>
+<head>
+	<title>Character Bios</title>
+	<script src="{% static 'characterselect/character.js' %}"></script>
+	<link href="{% static 'characterselect/styles.css' %}" rel='stylesheet'></link>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<style>
+		body {
+			background: url('/static/characterselect/media/bg2.png');
+			background-size: cover;
+			background-position: center;
+			height: 100vh;
+			background-attachment: fixed;
+			position: relative;
+			z-index: -1;
+		}
+		
+		#trophybox {
+			background-image: url('/static/characterselect/media/trophyboxsized2.png');
+			background-repeat: no-repeat;
+			background-size: contain;
+			height: auto;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		#render {
+			background-image: url('/static/characterselect/media/cbg2.png');
+			background-size: cover;
+		}
+
+		#mobilerender {
+			background-image: url('/static/characterselect/media/cbg2.png');
+			background-size: cover;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<div id="desktopview">
+	<a href='../' id='backbtnlink'><img id='backbtn' src="{% static 'characterselect/media/backbtn.png' %}"></a>
+	<div id="trophybox">
+		<div id="render"><img id="character" src='{{ char.image }}'></div>
+		<div id="namebox"><h1 id="name">{{ char.name }}</h1></div>
+		<div id="bio"><p id='description'>{{ char.description }}</p><div id='more' style="display: none"><div id='flexbox1' style="text-align: left">{{ char.pref|safe }}</div><div id='mobileplayers'><h3>Notable Players:</h3><h2>{{ char.mains }}</h2></div></div></div>
+		<div id='buttons'><button type='submit' id='biobtn'>Bio</button><button type="submit" id='morebtn'>More</button></div>
+	</div>
+
+	</div>
+	<div id="mobileview">
+		<a href='../'><img id='backbtn' src="{% static 'characterselect/media/backbtn.png' %}"></a>
+		<div class="center">
+			<h1 id="mobilename">{{ char.name }}</h1>
+			<div id="mobilerender"><img id="mobilecharacter" src='{{ char.image }}'></div>
+			<br><div id='mobilebio'><p id='mobiledescription'>{{ char.description }}</p></div> 
+			<div id='flexbox1'>{{ char.pref|safe }}</div>
+			
+			<div id='mobileplayers'><h3>Notable Players:</h3><h2>{{ char.mains }}</h2></div>
+
+		</div>
+	</div>
+</body>

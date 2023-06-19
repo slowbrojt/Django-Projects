@@ -1,0 +1,153 @@
+.navbar {
+	background-color: rgb(51,51,51);
+    position: relative;
+    height: 12vh;
+
+}
+
+.reviewtrick {
+	font-size: 1.2em;
+	text-align: center;
+}
+
+.navbar-list {
+	right:  0;
+	position: absolute;
+	margin-top: 8px;
+	margin-right: 10px;
+}
+
+.credits {
+	flex-basis: 25%;
+}
+
+.trickinfo {
+	text-align: center;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+input {
+	background-color: rgb(51,51,51);
+	color: orangered;
+}
+
+textarea {
+	background-color: rgb(51,51,51);
+	color: orangered;
+	width: 220px;
+	height: 60px;
+}
+
+
+
+.center {
+	text-align: center;
+	min-height: 30vh;
+	justify-content: center;
+}
+
+
+#emblem {
+	color: orangered;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ul {
+	list-style-type: none;
+	display: inline; 
+}
+
+#rules {
+text-align: left;
+display: inline-block;
+margin-top: 4vh;
+margin-bottom: 4vh;
+}
+
+pre {
+	font-size: 1.1em;
+	white-space: pre-wrap;
+}
+
+body {
+	background-color: rgb(97,97,97);
+	font-family: monospace;
+}
+li {
+	text-align: left;
+	margin: 0px auto;
+}
+
+label {
+	width: 12%;
+	margin-right: 3%;
+	margin-left: 37%;
+	text-transform: lowercase;
+}
+
+#container {
+	text-align: center;
+	justify-content: center;
+}
+.accept {
+	text-align: center;
+}
+
+#acceptbtn {
+	margin-top: 5px;
+	margin-bottom: 8px;
+}
+
+iframe {
+	margin-top: 3vh;
+	margin-bottom: 3vh;
+}
+
+#submitbtn {
+	margin-bottom: 15px;
+	margin-top: 1vh;
+}
+
+.flexbox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	min-height: 15vh;
+}
+
+.flexbox1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.trick {
+	flex-basis: 25%;
+	text-align: center;
+	
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+}
+
+.trickbtn {
+	border-radius: .5em;
+	font-size: 1em;
+	width: 80%;
+	height: 100%;
+	margin-right: 5px;
+
+}
+
+h1 {
+	text-align: center;
+}
+
+p {
+	font-size: 1.2em;
+}

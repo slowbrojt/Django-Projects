@@ -1,0 +1,31 @@
+{% extends "tricks/layout.html" %}
+{% load static %}
+
+{% block body %}
+<br>
+<div id="container">
+	<h3>rules</h3>
+	<div id="rules">
+	<pre>
+each skier can only be featured in the trickipedia up to 2 times
+we will only accept submissions for tricks that aren't already in the trickipedia
+if we are reopening submissions for a certain trick it will be stated on that trick's page
+you must supply the youtube embed code for your video, not the url
+videos must have no more than 2 seconds of deadspace before and after the trick
+video footage must be clear and the skier's body must remain in frame
+videos must have only raw skiing audio. any submissions with music will not be considered
+audio is not required
+tricks must be executed and landed very well. no shuffles, no reverts
+if you grab a trick grabs must be held. no touches or missed grabs
+only named switch up to 270 out combos (ie: k-fed, illusive) will be accepted
+providing your social links is encouraged but not required
+	</pre>
+	</div>
+</div>
+<form action="" method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <div id="container">
+    	<input id="submitbtn" type="submit" value="submit">
+    </div>
+</form>
+{% endblock %}

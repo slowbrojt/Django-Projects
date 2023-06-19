@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<head>
+	<title>Choose Your Character!</title>
+	<link href="{% static 'characterselect/styles.css' %}" rel='stylesheet'></link>
+	<style>
+		body {
+			background-color: black;
+			background:  url('static/characterselect/media/bg3.png');
+		}
+	</style>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+
+<body>
+	<h1 class='title'>Select Your Character!</h1>
+	<div><h1 class='titleshadow'>Select Your Character!</h1><div>
+	<h3 id="top">Proven Super Major Threats:</h3>
+	<div class='top'>
+		<div><a href ='/character/fox'><img class="portrait"src="{% static 'characterselect/media/foxportrait.png' %}"></a></div>
+		<div><a href ='/character/falco'><img class="portrait" src="{% static 'characterselect/media/falcoportrait.png' %}"></a></div>
+		<div><a href ='/character/marth'><img class="portrait" src="{% static 'characterselect/media/marthportrait.png' %}"></a></div>
+		<div><a href ='/character/jigglypuff'><img class="portrait" src="{% static 'characterselect/media/puffportrait.png' %}"></a></div>
+		<div><a href ='/character/sheik'><img class="portrait" src="{% static 'characterselect/media/sheikportrait.png' %}"></a></div>
+		<div><a href ='/character/peach'><img class="portrait" src="{% static 'characterselect/media/peachportrait.png' %}"></a></div>
+	</div>
+	<h3>Have Won Super Majors:</h3>
+	<div class="top">
+		<div><a href ='/character/yoshi'><img class="portrait" src="{% static 'characterselect/media/yoshiportrait.png' %}"></a></div>
+		<div><a href ='/character/captainfalcon'><img class="portrait" src="{% static 'characterselect/media/falconportrait.png' %}"></a></div>
+		<div><a href ='/character/pikachu'><img class="portrait" src="{% static 'characterselect/media/pikaportrait.png' %}"></a></div>
+	</div>
+	<h3>Could Win a Major:</h3>
+	<div class="top">
+		<div><a href ='/character/samus'><img class="portrait" src="{% static 'characterselect/media/samusportrait.png' %}"></a></div>
+		<div><a href ='/character/iceclimbers'><img class="portrait" src="{% static 'characterselect/media/icportrait.png' %}"></a></div>
+		<div><a href ='/character/drmario'><img class="portrait" src="{% static 'characterselect/media/docportrait.png' %}"></a></div>
+		<div><a href ='/character/luigi'><img class="portrait" src="{% static 'characterselect/media/luigiportrait.png' %}"></a></div>
+	</div>
+	<h3>Counterpicks:</h3>
+	<div class="top">
+		<div><a href ='/character/donkeykong'><img class="portrait" src="{% static 'characterselect/media/dkportrait.png' %}"></a></div>
+		<div><a href ='/character/younglink'><img class="portrait" src="{% static 'characterselect/media/ylportrait.png' %}"></a></div>
+	</div>
+
+
+
+</body>

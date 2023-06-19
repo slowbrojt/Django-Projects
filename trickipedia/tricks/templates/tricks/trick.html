@@ -1,0 +1,28 @@
+{% extends "tricks/layout.html" %}
+{% load static %}
+
+{% block body %}
+	<div class="center">
+	{{ trick.video|safe }}
+	</div>
+	<div class="trickinfo">
+	<h2>{{ trick.name }}</h2> <br>
+
+	<p>{{ trick.description }}</p><br>
+
+	<div class="flexbox1">
+	<p class="credits">skier: {{ trick.skier }}</p>    <p class="credits">filmer: {{ trick.filmer }}</p>
+	</div>
+	<div class="flexbox1">
+	{% if trick.insta %}
+	<p class="credits">instagram: {{ trick.insta }}</p>
+	{% endif %}  
+	{% if trick.ns %}
+	<p class="credits">newschoolers: {{ trick.ns }}</p>
+	{% endif %}
+	</div>
+	{% if user.is_authenticated %}
+		<a href="/review/{{ trick.id }}">review?</a> <br>
+	{% endif %}
+	</div>
+{% endblock %}

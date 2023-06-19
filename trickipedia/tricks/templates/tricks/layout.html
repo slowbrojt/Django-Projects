@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{% block title %}trickipedia{% endblock %}</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="{% static 'tricks/styles.css' %}" rel="stylesheet">
+		
+
+        
+    </head>
+    <body>
+
+        <div class="navbar"> 
+			<h1 id="emblem">trickipedia</h1>
+			<ul class="navbar-list">
+			<li>
+				<a href="/" class="navbar-item">view tricks</a>
+			</li>
+			<li>
+				<a href="/submissions" class="navbar-item">submit a trick</a>
+			</li>
+			{% if user.is_authenticated %}
+				<li>
+					<a href="/review" class="navbar-item">review tricks<a>
+				</li>
+				<li>
+					<a href="/logout" class="navbar-item">admin logout</a>
+				</li>
+			{% endif %}
+			</ul>
+		</div> 
+        
+        <div class="body">
+            {% block body %}
+            {% endblock %}
+        </div>
+    </body>
+</html>

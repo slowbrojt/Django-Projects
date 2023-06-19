@@ -1,0 +1,15 @@
+{% extends "tricks/layout.html" %}
+{% load static %}
+
+{% block body %}
+	{% if msg %}
+		<br>
+		<p class="center">{{ msg }}</p>
+	{% endif %}
+	{% if tricks %}
+	<ul>
+		{% for trick in tricks %}
+			<li class="reviewtrick"><a href="/review/{{ trick.id }}">{{ trick.name }}, {{ trick.email }}</a></li>
+		{% endfor %}
+	{% endif %}
+{% endblock %}
