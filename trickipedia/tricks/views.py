@@ -64,12 +64,14 @@ def reviewtrick(request, trick_id):
                 {'msg': "sorry, there isn't a trick here yet." })
     if request.method=="POST":
         trick = Trick.objects.get(id = trick_id)
+        name = request.POST.get('trick')
         skier = request.POST.get('skier')
         insta = request.POST.get('insta')
         filmer = request.POST.get('filmer')
         ns = request.POST.get("ns")
         difficulty = request.POST.get('difficulty')
         description = request.POST.get('description')
+        trick.name = name
         trick.skier = skier
         trick.filmer = filmer
         trick.insta = insta
