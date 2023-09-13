@@ -197,13 +197,13 @@ transform: scale(1.2);
 #bio {
 	font-family: 'Impact';
 	position: absolute;
-	color: white;
+	color: #FFFDFA;
 	width: 26.8em;
 	text-align: left;
 	margin-left: 42.5%;
 	margin-top: 75px;
 	font-size: 1.125em;
-	letter-spacing: .01rem;
+	letter-spacing: .03rem;
 }
 
 .center {
