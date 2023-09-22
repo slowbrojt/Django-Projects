@@ -1,8 +1,8 @@
 .navbar {
-    background-color: #222222;
+	background-color: #222222;
     position: relative;
     height: 12vh;
-    border-radius: .5px;
+    border-bottom: 2px solid #333333;
 
 }
 
@@ -103,6 +103,7 @@ label {
 	margin-right: 3%;
 	margin-left: 37%;
 	text-transform: lowercase;
+	color: white;
 }
 
 #container {
@@ -144,22 +145,25 @@ iframe {
 }
 
 .trick {
-	flex-basis: 25%;
+	flex-basis: 16.6666%;
 	text-align: center;
-	
 	margin-top: 10px;
 	margin-bottom: 10px;
-
 }
 
 .trickbtn {
 	border-radius: .5em;
 	border-color: gray;
 	font-size: 1em;
-	width: 80%;
+	width: 11em;
 	height: 100%;
 	margin-right: 5px;
+}
 
+.trickbtn:hover {
+		color: white;
+		transform: scale(1.01);
+		background-color: #2B2B2B;
 }
 
 h1 {
