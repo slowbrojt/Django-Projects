@@ -1,7 +1,7 @@
 .navbar {
 	background-color: #222222;
     position: relative;
-    height: 12vh;
+    height: 130px;
     border-bottom: 2px solid #333333;
 
 }
@@ -53,6 +53,10 @@ textarea {
 	height: 60px;
 }
 
+.form-container {
+	text-align: center;
+	align-content: center;
+}
 
 
 .center {
@@ -71,7 +75,7 @@ textarea {
 
 ul {
 	list-style-type: none;
-	display: inline; 
+	display: absolute; 
 	color: white;
 }
 
@@ -100,8 +104,7 @@ li {
 
 label {
 	width: 12%;
-	margin-right: 3%;
-	margin-left: 37%;
+	margin-right: 30px;
 	text-transform: lowercase;
 	color: white;
 }
@@ -122,6 +125,7 @@ label {
 iframe {
 	margin-top: 3vh;
 	margin-bottom: 3vh;
+	max-width: 95%;
 }
 
 #submitbtn {
@@ -178,4 +182,51 @@ h2, h3 {
 p {
 	font-size: 1.2em;
 	color: white;
+}
+
+@media only screen and (max-width: 600px) {
+	
+	h1 {
+		font-size: 1.8em;
+	}
+
+	a {
+		font-size: 12px;
+	}
+
+	.flexbox {
+		margin-bottom: 20px;
+	}
+
+	.trick {
+		margin-top: 7px;
+		margin-bottom: 7px;
+	}
+
+	iframe {
+		max-width: 100%;
+		height: auto;
+		margin-top: 9vh;
+		margin-bottom: 9vh;
+	}
+
+	p {
+		font-size: 1em;
+	}
+
+	pre {
+		font-size: .9em;
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+
+	label {
+		margin-left: 0%;
+		margin-right: 30px;
+		width: 20%;
+	}
+	.form-container {
+		text-align: center;
+		align-content: center;
+	}
 }
