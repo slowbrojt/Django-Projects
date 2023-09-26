@@ -5,17 +5,18 @@
 	<div class="center">
 	{{ trick.video|safe }}
 	</div>
+	<div class='reviewform'>
 	<form method="POST" action="/review/{{ trick.id }}"> {% csrf_token %}
 		<label for="trick">trick: </label> 
-		<input required name="trick" type="text" value="{{ trick.name }}">
+		<input required name="trick" type="text" value="{{ trick.name }}"><br>
 		<label for="trick">skier: </label>
 		<input required name="skier" type="text" value="{{ trick.skier }}"><br>
 		<label for="filmer">filmer: </label> 
-		<input required name="filmer" type="text" value="{{ trick.filmer }}">
+		<input required name="filmer" type="text" value="{{ trick.filmer }}"><br>
 		<label for="insta">insta: </label>
 		<input name="insta" type="text" value="{{ trick.insta }}"><br>
 		<label for="ns">ns: </label>
-		<input name="ns" type="text" value="{{ trick.ns }}">  
+		<input name="ns" type="text" value="{{ trick.ns }}"><br>
 		<label for="difficulty">difficulty: </label>
 		<select required name= "difficulty" id="difficulty" 
 		name="difficulty">
@@ -33,7 +34,7 @@
 				<input type="submit" value="delete?">
 			</form>
 		</div>
-
+	</div>
 
 
 
